@@ -9,3 +9,38 @@ header{
     height: 70px;
     border: 3px solid green;
 }
+
+@media screen and (max-width: 40rem) {
+    .hamburger {
+        background: transparent;
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        position: relative;
+        outline: none;
+        border: 0;
+        z-index: 9999;
+    }
+
+    .hamburger-top,
+    .hamburger-middle,
+    .hamburger-bottom {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 24px;
+        height: 2px;
+        background: var(--secondary-color);
+        transform: rotate(0);
+        transition: all 0.5s;
+    }
+
+    .hamburger-middle {
+        transform: translateY(7px);
+    }
+
+
+    .hamburger-bottom {
+        transform: translateY(14px);
+    }
+}
