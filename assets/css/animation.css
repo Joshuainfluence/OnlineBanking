@@ -1,0 +1,30 @@
+@keyframes home {
+    50%{
+        background-image: url(../img/8.png);
+        /* width: 100%; */
+        /* margin: 0 0 0 0; */
+    }
+    100%{
+        background-image: url(../img/7.png);
+        /* width: 100%; */
+        /* margin: 0 0 0 0; */
+        -ms-zoom-animation: 10%;
+    }
+}
+
+@keyframes text-mov {
+    50%{
+        padding: 0 0 0 4rem;
+    }
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
