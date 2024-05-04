@@ -5,9 +5,7 @@
     font-family: sans-serif;
 }
 
-body {
-    background-color: #f6e6e6;
-}
+
 
 :root {
     --primary-color: #ffffff;
@@ -15,12 +13,24 @@ body {
     --text-color: #333333;
 }
 
+.dark-theme {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --text-color: #fff;
+}
+
+body {
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+
 header {
     width: 100%;
     height: 70px;
     z-index: 9999;
-    /* background: var(--primary-color); */
-    background-color: #f6e6e6;
+    background: var(--primary-color);
+    /* background-color: #f6e6e6; */
+    /* background: #000; */
     position: fixed;
     margin: -1rem 0 0 0;
     /* padding: 0 0 5rem 0; */
@@ -77,6 +87,18 @@ ul li a {
     display: none;
 }
 
+#theme {
+    /* width: 200px; */
+    /* height: 70px; */
+    background: transparent;
+    border: none;
+    position: absolute;
+    margin: 0.8rem 0 0 97%;
+    font-size: 1.3rem;
+    color: var(--text-color);
+
+}
+
 @media screen and (max-width: 40rem) {
     .hamburger {
         display: block;
@@ -91,6 +113,17 @@ ul li a {
         z-index: 9999;
     }
 
+    #theme {
+        /* width: 200px; */
+        /* height: 70px; */
+        background: transparent;
+        border: none;
+        position: absolute;
+        margin: 0.8rem 0 0 84%;
+        font-size: 1.3rem;
+        padding: 0 1.2rem 0 0;
+    }
+
     .tabs {
         width: 100%;
         background-color: var(--secondary-color);
@@ -103,7 +136,7 @@ ul li a {
         position: absolute;
         padding: 3rem 0 0 0;
         justify-content: center;
-        background-color: #fff;
+        background-color: var(--primary-color);
         /* visibility: hidden; */
     }
 
@@ -160,7 +193,7 @@ ul li a {
         left: 0;
         width: 24px;
         height: 2px;
-        background: black;
+        background: var(--text-color);
         transform: rotate(0);
         transition: all 0.5s;
     }

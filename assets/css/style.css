@@ -3,7 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #000;
+    --text-color: #333333;
+}
+.dark-theme{
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --text-color: #fff;
+}
+body {
+    background-color: var(--primary-color);
+    
+}
 .home .container-fluid{
     margin: 0.5rem 0 0 0;
     width: 100%;
@@ -121,6 +134,15 @@
     .card .container-fluid .row .col img{
         width: 300px;
     }
-    
+
+    .home .container{
+        width: 90%;
+        margin: 2.5rem 0 0 5%;
+
+    }
+    .home .container .row .col h1{
+        font-size: 2.3rem;
+        font-weight: 500;
+    }
 }
 
